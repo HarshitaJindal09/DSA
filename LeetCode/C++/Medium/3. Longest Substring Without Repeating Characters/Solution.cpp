@@ -1,19 +1,26 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        vector<bool>count(256,0);
-        int first = 0;
-        int second = 0;
-        int len = 0;
-        while(second<s.size()){
-            while(count[s[second]]){    // repeating charcetr
-                count[s[first]]=0;     
-                first++;
+        int low = 0;
+        int n = s.size();
+        int result = INT_MIN;
+        unordered_map<char,int> map;
+        for(int high=0;high<n;high++){
+            map[s[high]]++;
+            int k = high-low+1;
+            while(map.size()<k){
+                map[s[low]]--;
+                if(map[s[low]] == 0){
+                    map.erase(s[low]);
+                }
+                low++;
+                k = high-low+1;
             }
-            count[s[second]] = 1;
-            len= max(len,second-first+1);
-            second++;
+            if(map.size()==k){
+                int len = high-low+1;
+                result = max(result,len);
+            }
         }
-        return len;
-    }    
+        return result;  
+    }
 };
