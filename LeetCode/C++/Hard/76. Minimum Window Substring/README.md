@@ -1,6 +1,6 @@
 # 📝 76. Minimum Window Substring (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/minimum-window-substring/?envType=study-plan-v2&envId=top-interview-150)
+🔗 [Problem Link](https://leetcode.com/problems/minimum-window-substring/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Hard-red) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
