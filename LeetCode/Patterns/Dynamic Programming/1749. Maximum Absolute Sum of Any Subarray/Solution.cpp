@@ -1,7 +1,7 @@
 class Solution {
 public:
     int maxAbsoluteSum(vector<int>& nums) {
-        int ans = nums[0];
+        int ans = abs();
         int maxSum = nums[0];
         int minSum = nums[0];
 
