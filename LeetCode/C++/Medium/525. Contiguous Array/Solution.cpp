@@ -17,10 +17,10 @@ public:
                 result = max(result,i+1);
                 continue;
             }
-            if(mpp.find(diff) != mpp.end()){
-                result = max(result,i- mpp[diff]);
+            if(mpp.find(diff) == mpp.end()){
+                mpp[diff] = i;
             }else{
-                mpp[diff] = i; 
+                result = max(result,i- mpp[diff]);
             }
         }
         return result;
