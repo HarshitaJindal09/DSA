@@ -1,6 +1,6 @@
 # 📝 182. Duplicate Emails (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/duplicate-emails/?utm_source=chatgpt.com)
+🔗 [Problem Link](https://leetcode.com/problems/duplicate-emails/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-SQL-blue)
 
@@ -8,7 +8,7 @@
 Database
 
 ### 🚀 Performance
-- **Runtime:** Successfully Evaluated
+- **Runtime:** N/A
 - **Memory:** N/A
 
 ---
